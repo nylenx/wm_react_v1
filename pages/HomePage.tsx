@@ -6,19 +6,20 @@ import TestimonialCard from '../components/TestimonialCard';
 
 // --- SECTIONAL COMPONENTS ---
 
+
 const HeroSection: React.FC = () => (
-    <div className="relative rounded-xl overflow-hidden min-h-[500px] flex items-center justify-center text-center p-8 shadow-xl bg-background-light">
-        <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-gray-900">Streamline Your Revenue Cycle with Expert Medical Billing</h1>
-            <p className="mt-4 text-lg md:text-xl font-light text-gray-600">Maximize your practice's profitability and efficiency with our comprehensive medical billing and RCM services. We handle the complexities, so you can focus on patient care.</p>
+    <div className="relative min-h-[500px] flex items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba9996a?q=80&w=2070&auto=format&fit=crop')" }}>
+        <div className="absolute inset-0 bg-primary opacity-60"></div>
+        <div className="relative z-10 max-w-3xl">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-white text-shadow">Streamline Your Revenue Cycle with Expert Medical Billing</h1>
+            <p className="mt-4 text-lg md:text-xl font-light text-gray-100 text-shadow">Maximize your practice's profitability and efficiency with our comprehensive medical billing and RCM services. We handle the complexities, so you can focus on patient care.</p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                <Link to="/contact" className="bg-primary text-white font-bold text-base px-6 py-3 rounded-lg hover:bg-primary/90 transition-transform transform hover:scale-105">Get a Free Consultation</Link>
-                <Link to="/services" className="bg-secondary text-primary font-bold text-base px-6 py-3 rounded-lg hover:bg-secondary/90 transition-transform transform hover:scale-105">Learn More</Link>
+                <Link to="/contact" className="bg-white text-primary font-bold text-base px-6 py-3 rounded-lg hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-lg">Get a Free Consultation</Link>
+                <Link to="/services" className="bg-secondary text-primary font-bold text-base px-6 py-3 rounded-lg hover:bg-secondary/90 transition-transform transform hover:scale-105 shadow-lg">Learn More</Link>
             </div>
         </div>
     </div>
 );
-
 const ImpactSection: React.FC = () => (
     <div className="py-16">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">Our Impact</h2>
@@ -86,10 +87,10 @@ const IndustriesSection: React.FC = () => (
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
-                <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb2ujxRefwxlJBZ8v7POgJSYfShDnSUww3pbDhDDuwpinQ0NXzQzuoEo_xUEcRHTYVW0yLyxe4XPRIIICxIVvMjcdMzARRBsYREKVaF6EFcwfDyLQ_vdv0V0-xklYdfHsDCEyjUBD17ZFRAPCRvcOSf8fajgjhuWsGK7yl5IzGovilHvwXqYJHRBxXK4WxlqkRP90skUTIdPXRHQio8n6Tp9mZIFr6vctg_kiLLoe_7pnG4PLaC9oqI8_ZirMgbuKr4sh8I3oA7oSc" 
-                    alt="Physician Practices" 
-                    className="w-full h-48 object-cover" 
+                <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb2ujxRefwxlJBZ8v7POgJSYfShDnSUww3pbDhDDuwpinQ0NXzQzuoEo_xUEcRHTYVW0yLyxe4XPRIIICxIVvMjcdMzARRBsYREKVaF6EFcwfDyLQ_vdv0V0-xklYdfHsDCEyjUBD17ZFRAPCRvcOSf8fajgjhuWsGK7yl5IzGovilHvwXqYJHRBxXK4WxlqkRP90skUTIdPXRHQio8n6Tp9mZIFr6vctg_kiLLoe_7pnG4PLaC9oqI8_ZirMgbuKr4sh8I3oA7oSc"
+                    alt="Physician Practices"
+                    className="w-full h-48 object-cover"
                     loading="lazy"
                     width="400"
                     height="192"
@@ -100,8 +101,8 @@ const IndustriesSection: React.FC = () => (
                 </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
-                <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh7Izyz8df14bQfSocarwqmUfDw-zaV96kMTfaaFOQuxw4ruoV9fcyeMKSsOk1Embga0JP0uW0wz-MKsDKdyprmFC8a1A3Y7K-zYRDHhRtr57VeRMUgp0JKSGzzKQ4eQcRdoHu6UkQKxBxhl8N5TiUVzVPNy6ygbqc8rK5OHkoPNbeuH0HFA1ubJ6YZ2c5FSbJDy7q_5B9aPIioOVjmdcEOfAbea7nvQoT_eweuX_n4o_VUsqhnjtY9pg_LE5DLmF56RbwCKF_areP" 
+                <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh7Izyz8df14bQfSocarwqmUfDw-zaV96kMTfaaFOQuxw4ruoV9fcyeMKSsOk1Embga0JP0uW0wz-MKsDKdyprmFC8a1A3Y7K-zYRDHhRtr57VeRMUgp0JKSGzzKQ4eQcRdoHu6UkQKxBxhl8N5TiUVzVPNy6ygbqc8rK5OHkoPNbeuH0HFA1ubJ6YZ2c5FSbJDy7q_5B9aPIioOVjmdcEOfAbea7nvQoT_eweuX_n4o_VUsqhnjtY9pg_LE5DLmF56RbwCKF_areP"
                     alt="Specialty Clinics"
                     className="w-full h-48 object-cover"
                     loading="lazy"
@@ -114,7 +115,7 @@ const IndustriesSection: React.FC = () => (
                 </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
-                 <img 
+                <img
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlNGDbIAbAjDchYrMjNVWpUtCqy6B83aCL7WPVy1HxJjPJtOumMN_AJ_AbgD1hTyGI0amdNGZXmyl04JRxTO0hY0x1XtzaRPzXy0Pfk7Q0zxE1wG9SNhyoviAQNLdRIeTEbqdema6nVWmdSjbnVyJo-cItxhJXhVtn5WLTIp4kxTUpIIimmseEnBoIiq7ekJWEs9FP1EZY0vz_IyJTWzpX95KrNSOQ90n2o59JTg0WYKHBU6AGXwTc2qU_TionYnCis05bO8PItmmJ"
                     alt="Hospitals &amp; Health Systems"
                     className="w-full h-48 object-cover"
@@ -170,17 +171,17 @@ const CtaSection: React.FC = () => (
 
 
 const HomePage: React.FC = () => {
-  return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-      <HeroSection />
-      <ImpactSection />
-      <SolutionsSection />
-      <IndustriesSection />
-      <TestimonialsSection />
-      <MiniCalculatorSection />
-      <CtaSection />
-    </div>
-  );
+    return (
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <HeroSection />
+            <ImpactSection />
+            <SolutionsSection />
+            <IndustriesSection />
+            <TestimonialsSection />
+            <MiniCalculatorSection />
+            <CtaSection />
+        </div>
+    );
 };
 
 export default HomePage;
